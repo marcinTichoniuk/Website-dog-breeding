@@ -32,9 +32,9 @@ const images = [
   },
 ]
 
-export default {
-  dogs: [
+const data = {
 
+  "dogs": [
     {
       id: 1,
       gender: 'male',
@@ -66,9 +66,7 @@ export default {
   ],
 
 
-
-  femaleDogs: [
-
+  "femaleDogs": [
     {
       id: 3,
       gender: 'female',
@@ -123,4 +121,7 @@ export default {
     },
   ]
 }
+
+
+export default data;
 

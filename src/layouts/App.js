@@ -57,7 +57,7 @@ class App extends React.Component {
     if (this.state.isOpen) classes.push('active');
 
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div className="wrapper">
           <header>
             {<Burger click={this.handleClickBurger} classes={classes.join(' ')} />}
