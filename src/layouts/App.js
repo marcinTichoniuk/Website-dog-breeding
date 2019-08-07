@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter, BrowserRouter as Router } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
@@ -57,7 +57,7 @@ class App extends React.Component {
     if (this.state.isOpen) classes.push('active');
 
     return (
-      <Router basename={process.env.PUBLIC_URL}>
+      <HashRouter basename="/">
         <div className="wrapper">
           <header>
             {<Burger click={this.handleClickBurger} classes={classes.join(' ')} />}
@@ -67,14 +67,14 @@ class App extends React.Component {
           </header>
           <main>
             <section className="page" ref={this.myRef}>
-              {<Page location={location} envelope={envelope} phone={phone} />}
+              {<Page location={location} envelope={envelope} phone={phone} fb={facebook} />}
             </section>
           </main>
           <footer>
             {<Footer fb={facebook} yt={yt} />}
           </footer>
         </div>
-      </Router>
+      </HashRouter>
     );
   }
 }

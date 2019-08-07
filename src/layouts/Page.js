@@ -22,14 +22,14 @@ const routes = [
 
 const Page = props => {
 
-  const { location, envelope, phone } = props;
+  const { location, envelope, phone, fb } = props;
 
   const routesMap = routes.map(route => (
     <Route
       key={route.id}
       path={route.path}
       exact={route.exact && route.exact}
-      component={(props) => <route.component {...props} location={location} envelope={envelope} phone={phone} />}
+      component={(props) => <route.component {...props} location={location} envelope={envelope} phone={phone} fb={fb} />}
     />
   ))
 

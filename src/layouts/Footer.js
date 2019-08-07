@@ -8,9 +8,6 @@ const Footer = props => {
         <span>created <strong>by eMTi</strong></span>
       </div>
       <div className="media">
-        {/* <div className="logo">
-          <h3>logo</h3>
-        </div> */}
         <div className="address">
           <p>Hodowla Valey of Borders</p>
           <p>ul. Pieska 34 </p>

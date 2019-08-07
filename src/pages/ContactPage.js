@@ -46,9 +46,9 @@ class ContactPage extends React.Component {
         <div className="contact-list">
           <p>W razie jakichkolwiek pytań prosimy o kontakt!</p>
           <ul>
-            <li>email: <strong>valeyofborders@gmail.com</strong></li>
-            <li>telefon: <strong>697 961 160</strong></li>
-            <li>facebook: fejs</li>
+            <li>{this.props.envelope}<strong>valeyofborders@gmail.com</strong></li>
+            <li>{this.props.phone}<strong>697 961 160</strong></li>
+            <li>{this.props.fb}<strong><a href="https://pl-pl.facebook.com/bordercollieBielsko/">facebook</a></strong> </li>
           </ul>
         </div>
         <form action="" className='form' onSubmit={this.handleSubmit} noValidate>
@@ -61,10 +61,10 @@ class ContactPage extends React.Component {
         <div className="address-info">
           <h3>Odwiedź nas!</h3>
           <p>{this.props.location}ul. Pieska 34 02-509 Mazańcowice (Bielsko-Biała)</p>
-          <p>{this.props.envelope}valeyofborders@gmail.com</p>
-          <p>{this.props.phone}697 961 160</p>
+          {/* <p>{this.props.envelope}valeyofborders@gmail.com</p>
+          <p>{this.props.phone}697 961 160</p> */}
         </div>
-      </div>
+      </div >
     );
   }
 }
