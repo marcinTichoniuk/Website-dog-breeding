@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0c132551076c1d4f6de4fea934e01426",
+    "revision": "4dedc462177c4b07bd06f42bd735d2cd",
     "url": "/Website-dog-breeding/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Website-dog-breeding/static/css/2.f74a8007.chunk.css"
   },
   {
-    "revision": "65727fe4034b4668e835",
+    "revision": "9847d6c3c395eb27da06",
     "url": "/Website-dog-breeding/static/css/main.bbdd8339.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Website-dog-breeding/static/js/2.4b8e4d12.chunk.js"
   },
   {
-    "revision": "65727fe4034b4668e835",
-    "url": "/Website-dog-breeding/static/js/main.94cb0427.chunk.js"
+    "revision": "9847d6c3c395eb27da06",
+    "url": "/Website-dog-breeding/static/js/main.8bee4185.chunk.js"
   },
   {
     "revision": "9826a0ef631894f95c2b",
