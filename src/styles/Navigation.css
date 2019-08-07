@@ -134,3 +134,9 @@
   }
 }
 
+@media (max-width: 576px){
+  .menu-mobile {
+    padding: 15vh 40px;
+  }
+}
+

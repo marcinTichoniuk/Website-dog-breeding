@@ -54,7 +54,12 @@ class App extends React.Component {
 
     const classes = [];
 
-    if (this.state.isOpen) classes.push('active');
+    if (this.state.isOpen) {
+      classes.push('active');
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'visible';
+    }
 
     return (
       <HashRouter basename="/">
