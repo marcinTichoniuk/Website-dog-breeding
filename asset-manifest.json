@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Website-dog-breeding/static/css/main.9e97b940.chunk.css",
+    "main.js": "/Website-dog-breeding/static/js/main.c5c45861.chunk.js",
+    "main.js.map": "/Website-dog-breeding/static/js/main.c5c45861.chunk.js.map",
+    "runtime~main.js": "/Website-dog-breeding/static/js/runtime~main.d1508c8c.js",
+    "runtime~main.js.map": "/Website-dog-breeding/static/js/runtime~main.d1508c8c.js.map",
+    "static/css/2.f74a8007.chunk.css": "/Website-dog-breeding/static/css/2.f74a8007.chunk.css",
+    "static/js/2.2f42fd4a.chunk.js": "/Website-dog-breeding/static/js/2.2f42fd4a.chunk.js",
+    "static/js/2.2f42fd4a.chunk.js.map": "/Website-dog-breeding/static/js/2.2f42fd4a.chunk.js.map",
+    "index.html": "/Website-dog-breeding/index.html",
+    "precache-manifest.bdc85c00940faac3bcf729bd1eac24e3.js": "/Website-dog-breeding/precache-manifest.bdc85c00940faac3bcf729bd1eac24e3.js",
+    "service-worker.js": "/Website-dog-breeding/service-worker.js",
+    "static/css/2.f74a8007.chunk.css.map": "/Website-dog-breeding/static/css/2.f74a8007.chunk.css.map",
+    "static/css/main.9e97b940.chunk.css.map": "/Website-dog-breeding/static/css/main.9e97b940.chunk.css.map",
+    "static/media/G3.jpg": "/Website-dog-breeding/static/media/G3.1b546818.jpg",
+    "static/media/aris.jpg": "/Website-dog-breeding/static/media/aris.8a749cc7.jpg",
+    "static/media/arisM.jpg": "/Website-dog-breeding/static/media/arisM.7cf0d9df.jpg",
+    "static/media/App.css": "/Website-dog-breeding/static/media/borderBack.8e19a87e.jpg",
+    "static/media/fredy.jpg": "/Website-dog-breeding/static/media/fredy.1545a80f.jpg",
+    "static/media/fredyM.jpg": "/Website-dog-breeding/static/media/fredyM.a85e324b.jpg",
+    "static/media/kora1.jpg": "/Website-dog-breeding/static/media/kora1.f1bbe8b5.jpg"
+  }
+}
