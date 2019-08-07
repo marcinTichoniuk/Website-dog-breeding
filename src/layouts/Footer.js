@@ -19,7 +19,7 @@ const Footer = props => {
           <p>e-mail: <strong>valeyofborders@gmail.com</strong></p>
         </div>
         <div className="logo">
-          <h3>logo</h3>
+          <h3>VoB</h3>
         </div>
         <div className="social">
           <span><a href="https://pl-pl.facebook.com/bordercollieBielsko/">{props.fb}</a></span>

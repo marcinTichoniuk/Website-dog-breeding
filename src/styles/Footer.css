@@ -55,6 +55,11 @@
   color: white;
 }
 
+.footer .logo {
+  font-family: 'Mouse Memoirs', sans-serif;
+  font-size: 3.5rem;
+}
+
 @media (max-width: 991px) {
   .footer .media {
     flex-wrap: wrap;
