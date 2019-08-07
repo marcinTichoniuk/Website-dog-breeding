@@ -1,0 +1,132 @@
+header::after {
+  content: '';
+  position: absolute;
+  top: 90%;
+  left: 0;
+  display: block;
+  height: 10vh;
+  min-height: 66px;
+  width: 40%;
+  background-color: #fff;
+}
+
+.header__title {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  max-width: 50%;
+}
+
+.header__title h1 {
+  font-size: 5rem;
+  color: white;
+  padding: 15px 0;
+}
+
+.header__title h1:nth-child(2){
+  font-family: 'Mouse Memoirs', sans-serif;
+  letter-spacing: 8px;
+  font-size: 7rem;
+}
+
+.header__title p {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  color: white;
+  line-height: 140%;
+}
+
+.scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px white;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.fa-arrow-down {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: white;
+}
+
+.fa-arrow-down:hover {
+  animation: down 0.5s linear;
+}
+
+
+@keyframes down {
+  0% {
+    top: 50%;
+    opacity: 1;
+  }
+ 
+  50% {
+    top: 85%;
+    opacity: 0.7;
+  }
+
+  100% {
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+.header__title h1.animate {
+  opacity: 0;
+}
+
+@keyframes moveUp {
+  from {
+    opacity: 0;
+    transform: translateY(50%)
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+@media (max-width: 991px){
+  .header__title {
+    top: 25%;
+  }
+  
+}
+
+@media (max-width: 576px) {
+  .header__title {
+    position: absolute;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .header__title h1 {
+    font-size: 4.2rem;
+    color: white;
+    padding: 15px 0 0 0;
+    text-align: center;
+  }
+  .header__title p {
+    margin-top: 60px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .header__title h1:nth-child(2){
+    letter-spacing: 5px;
+    font-size: 6rem;
+    padding-top: 50px;
+  }
+}
+
+
