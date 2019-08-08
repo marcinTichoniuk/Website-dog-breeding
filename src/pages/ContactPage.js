@@ -1,5 +1,6 @@
 import React from 'react';
 
+import ContactList from '../components/ContactList'
 import '../styles/Contact.css'
 
 // @TODO add validation form
@@ -43,25 +44,18 @@ class ContactPage extends React.Component {
 
   render() {
 
-    const { username, email, area } = this.state;
+    const { username, email, area, msg } = this.state;
 
     return (
       <div className="contact-page">
         <h3 className='main-section-title'>Kontakt</h3>
-        <div className="contact-list">
-          <p>W razie jakichkolwiek pytań prosimy o kontakt!</p>
-          <ul>
-            <li>{this.props.envelope}<strong>valeyofborders@gmail.com</strong></li>
-            <li>{this.props.phone}<strong>697 961 160</strong></li>
-            <li>{this.props.fb}<strong><a href="https://pl-pl.facebook.com/bordercollieBielsko/">facebook</a></strong> </li>
-          </ul>
-        </div>
+        <ContactList fb={this.props.fb} phone={this.props.phone} envelope={this.props.envelope} />
         <form action="" className='form' onSubmit={this.handleSubmit} noValidate>
           <input type="text" name="username" value={username} onChange={this.handleChange} placeholder="Twoje imię" />
           <input type="email" name="email" value={email} onChange={this.handleChange} placeholder="Twój adres email" />
           <textarea name="area" value={area} onChange={this.handleChange} placeholder="Twoja wiadomość"></textarea>
           <button className='btn btn-form'>Wyślij</button>
-          {this.state.msg && <span>{this.state.msg}</span>}
+          {msg && <span>{msg}</span>}
         </form>
         <div className="address-info">
           <h3>Odwiedź nas!</h3>
