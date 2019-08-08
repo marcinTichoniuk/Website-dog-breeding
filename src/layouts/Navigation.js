@@ -3,8 +3,6 @@ import { NavLink } from 'react-router-dom';
 
 import '../styles/Navigation.css';
 
-// style={{ animation: `moveLeft 0.5s ease forwards ${i / 9}s` }}
-
 const list = [
   { name: 'strona główna', path: '/', exact: true },
   { name: 'psy', path: '/dogs' },

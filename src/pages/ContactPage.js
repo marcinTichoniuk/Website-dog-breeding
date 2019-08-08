@@ -2,6 +2,10 @@ import React from 'react';
 
 import '../styles/Contact.css'
 
+// @TODO add validation form
+// @TODO handle form with firebase(?)
+// @TODO think about div.address-info - is it neccesary
+// @TODO add google map?
 class ContactPage extends React.Component {
   state = {
     username: '',
@@ -26,6 +30,7 @@ class ContactPage extends React.Component {
     })
   }
 
+  // Message that form was send (or not working yet)
   componentDidUpdate() {
     if (this.state.msg) {
       setTimeout(() => {

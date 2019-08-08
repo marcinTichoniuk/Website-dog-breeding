@@ -8,6 +8,7 @@ import '../styles/OneDog.css';
 
 import file from '../data/data';
 
+// @TODO change dog-lists? (make this as a card)
 
 const DogPage = props => {
   // console.log(props)

@@ -5,6 +5,8 @@ import '../styles/DogsPage.css';
 
 import file from '../data/data';
 
+// @TODO add srcSet and different size images
+
 const FemalePage = () => {
 
   const cards = file.femaleDogs.map(dog => (

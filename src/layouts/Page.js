@@ -9,6 +9,8 @@ import FemaleDogPage from '../pages/FemaleDogPage';
 import PuppiesPage from '../pages/PuppiesPage';
 import ContactPage from '../pages/ContactPage';
 
+// @TODO create error-page for wrong path
+
 const routes = [
   { id: 201, path: '/', exact: true, component: HomePage },
   { id: 202, path: '/dogs', component: DogsPage },

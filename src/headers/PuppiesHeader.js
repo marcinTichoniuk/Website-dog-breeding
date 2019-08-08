@@ -1,5 +1,7 @@
 import React from 'react';
 
+// @TODO add different description in <p><p/> - depends on having puppies
+
 const PuppiesHeader = () => {
   return (
     <div className="header__title">

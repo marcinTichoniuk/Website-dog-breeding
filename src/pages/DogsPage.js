@@ -7,6 +7,8 @@ import file from '../data/data.js';
 
 // srcSet={`${dog.imgM} 400w`}
 
+// @TODO add srcSet and different size images
+
 const DogsPage = () => {
 
   const cards = file.dogs.map(dog => (

@@ -9,6 +9,9 @@ import ContactHeader from '../headers/ContactHeader';
 
 import '../styles/Header.css';
 
+// @TODO create error-header for wrong path
+// @TODO add logo at the top of the page?
+
 const routes = [
   { id: 101, path: '/', component: HomeHeader, exact: true },
   { id: 102, path: '/dogs', component: DogsHeader },
