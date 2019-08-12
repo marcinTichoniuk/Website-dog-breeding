@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import '../styles/Navigation.css';
 
 const list = [
   { name: 'strona główna', path: '/', exact: true },
@@ -14,26 +13,26 @@ const list = [
 const Navigation = props => {
 
   const menu = list.map((link, i) => (
-    <li key={link.name} style={{ animation: `move 0.5s ease forwards ${i / 7}s` }}>
-      <NavLink to={link.path} exact={link.exact && link.exact}>{link.name}</NavLink>
+    <li className="nav-desktop__item" key={link.name} style={{ animation: `move 0.5s ease forwards ${i / 7}s` }}>
+      <NavLink className="nav-desktop__link" to={link.path} exact={link.exact && link.exact}>{link.name}</NavLink>
     </li>
   ))
 
   const menuMobile = list.map(link => (
-    <li key={link.name} >
-      <NavLink onClick={props.close} to={link.path} exact={link.exact && link.exact}>{link.name}</NavLink>
+    <li className="nav-mobile__item" key={link.name} >
+      <NavLink className="nav-mobile__link" onClick={props.close} to={link.path} exact={link.exact && link.exact}>{link.name}</NavLink>
     </li>
   ))
 
   return (
     <>
-      <nav className='main__nav main__nav-desktop'>
-        <ul className='menu-desktop'>
+      <nav className='nav-desktop header__nav-desktop'>
+        <ul className='nav-desktop__menu'>
           {menu}
         </ul>
       </nav>
-      <nav className={`main__nav main__nav-mobile ${props.classes}`}>
-        <ul className='menu-mobile'>
+      <nav className={`nav-mobile header__nav-mobile ${props.classes}`}>
+        <ul className='nav-mobile__menu'>
           {menuMobile}
         </ul>
       </nav>

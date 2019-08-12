@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
@@ -8,13 +8,14 @@ import { faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 
-import '../styles/App.css';
-
 import Header from './Header';
 import Navigation from './Navigation';
 import Page from './Page';
 import Footer from './Footer';
 import Burger from '../components/Burger';
+import Scroll from '../components/Scroll';
+
+import '../css/main.css';
 
 
 class App extends React.Component {
@@ -62,24 +63,24 @@ class App extends React.Component {
     }
 
     return (
-      <HashRouter basename="/">
+      <Router>
         <div className="wrapper">
-          <header>
+          <header className="header">
             {<Burger click={this.handleClickBurger} classes={classes.join(' ')} />}
             {<Header />}
             {<Navigation classes={classes.join(' ')} close={this.handleCloseMenu} />}
-            <div onClick={this.handleScrollTo} className="scroll">{arrow}</div>
+            {<Scroll click={this.handleScrollTo} arrow={arrow} />}
           </header>
-          <main>
+          <main className="main">
             <section className="page" ref={this.myRef}>
               {<Page location={location} envelope={envelope} phone={phone} fb={facebook} />}
             </section>
           </main>
-          <footer>
+          <footer className="app-footer">
             {<Footer fb={facebook} yt={yt} />}
           </footer>
         </div>
-      </HashRouter>
+      </Router>
     );
   }
 }

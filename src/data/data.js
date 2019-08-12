@@ -8,9 +8,6 @@ import img4 from '../images/kora1.jpg';
 // @TODO create gallery for all dogs
 // @TODO add different sizes images
 
-// import aris images
-// import aris1 from '../images/aris/aris.jpg';
-
 // const arisImages = [
 //   { original: , thumbnail: },
 //   { original: , thumbnail: },

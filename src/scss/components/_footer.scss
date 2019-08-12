@@ -1,0 +1,78 @@
+.footer {
+  @include flex($justify: space-around);
+  text-align: center;
+  min-height: 10vh;
+  background-color: $color-black;
+  color: $color-white;
+  margin: 70px auto 0 auto;
+  max-width: 1400px;
+
+  &__media {
+    @include flex($justify: space-around, $align-items: center);
+    flex: 4;
+    text-align: left;
+    padding: 20px;
+    @include media-q(large){
+      flex-wrap: wrap;
+    }
+    @include media-q(small){
+      padding: 15px;
+    }
+  }
+
+  &__address, &__contact, &__logo, &__socials {
+    padding: 10px;
+    flex: 1;
+    @include media-q(large){
+      flex-basis: 50%;
+    }
+  }
+
+  &__address, &__contact {
+    @include media-q(large){
+      padding-left: 40px;
+    }
+  }
+
+  &__logo, &__socials {
+    text-align: center;
+  }
+
+  &__social {
+    font-size: 2.8rem;
+    padding: 0 15px;
+    @include media-q(small){
+      padding: 0 10px;
+    }
+  }
+
+  &__link {
+    color: $color-white;
+  }
+
+  &__logo-title {
+    font-family: $font-special;
+    font-size: 4rem;
+  }
+
+  &__creator {
+    @include flex($direction: column-reverse);
+    flex: 1;
+    background-color: $color-white;
+    padding: 20px;
+    color: $color-black;
+    @include media-q(small){
+      padding: 10px;
+    }
+  }
+
+  &__line-text, &__info-text {
+    font-size: 1.4rem;
+    line-height: 160%;
+  }
+
+  @include media-q(small){
+    flex-direction: column-reverse;
+  }
+  
+}

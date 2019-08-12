@@ -1,0 +1,51 @@
+.form {
+  @include flex($direction: column);
+  margin: 0 auto;
+  flex-basis: 65%;
+  min-height: 370px;
+  max-height: 600px;
+  max-width: 550px;
+  padding: 25px 60px;
+  box-shadow: 0 6px 15px 5px rgba(0,0,0,0.2);
+  border-top-right-radius: 25px;
+  background-color: $color-white;
+
+  &__title {
+    font-size: 4.2rem;
+    letter-spacing: 5px;
+    font-family: $font-special;
+    padding: 20px 0;
+  }
+
+  &__input, &__textarea {
+    display: block;
+    height: 35px;
+    margin: 15px 0;
+    font-size: 1.6rem;
+    padding: 5px 15px;
+    &::placeholder {
+      font-family: $font-default;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__textarea {
+    height: 180px;
+    resize: none;
+  }
+
+  &__btn {
+    margin: 10px;
+  }
+
+  @include media-q(medium){
+    flex-basis: 90%;
+    padding: 25px 40px;
+  }
+
+  @include media-q(small){
+    flex-basis: 100%;
+    padding: 25px 20px;
+  }
+
+}

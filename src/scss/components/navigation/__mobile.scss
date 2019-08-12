@@ -1,0 +1,47 @@
+.nav-mobile {
+  display: none;
+  background-color: #a00023;
+  opacity: 0;
+  height: 100vh;
+  z-index: 1000;
+
+  &.active {
+    display: block;
+    animation: opa 0.5s ease forwards 0.15s;
+  }
+
+  &__menu {
+    @include flex($direction: column);
+    height: 100vh;
+    padding: 20vh 40px 40px;
+    list-style: none;
+    text-align: center;
+    @include media-q(medium){
+      padding: 15vh 40px 40px;
+    }
+    @include media-q(small){
+      padding: 15vh 40px;
+    }
+  }
+
+  &__item {
+    @include flex($direction: column, $justify: center);
+    flex: 1;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #e0cedce8;
+    font-size: 5rem;
+    &:hover {
+      color: $color-white;
+    }
+    &.active {
+      border-bottom: none;
+    }
+    @include media-q(medium){
+      font-size: 4rem;
+    }
+  }
+
+}

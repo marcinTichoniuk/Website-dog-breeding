@@ -7,8 +7,6 @@ import FemaleHeader from '../headers/FemaleHeader';
 import PuppiesHeader from '../headers/PuppiesHeader';
 import ContactHeader from '../headers/ContactHeader';
 
-import '../styles/Header.css';
-
 // @TODO create error-header for wrong path
 // @TODO add logo at the top of the page?
 
@@ -24,7 +22,12 @@ const routes = [
 const Header = () => {
 
   const routesMap = routes.map(route => (
-    <Route key={route.id} path={route.path} exact={route.exact && route.exact} component={route.component} />
+    <Route
+      key={route.id}
+      path={route.path}
+      exact={route.exact && route.exact}
+      component={route.component}
+    />
   ))
 
   return (

@@ -1,0 +1,51 @@
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  min-height: 400px;
+  padding: 40px 40px 0 40px;
+  margin-bottom: 50px;
+
+  &__info {
+    flex-basis: 100%;
+    font-size: 1.6rem;
+    padding: 20px;
+    background-color: $color-red;
+    color: $color-white;
+    margin-bottom: 80px;
+    @include media-q(medium){
+      font-size: 1.4rem;
+      margin: 0 auto 50px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 15px 0 0 0;
+  }
+
+  &__item {
+    line-height: 150%;
+  }
+
+  &__bold {
+    padding: 0 0 5px 30px;
+    @include media-q(small){
+      padding: 0 0 5px 20px;
+    }
+  }
+
+  &__link {
+    font-size: 1.6rem;
+    color: $color-white;
+    text-decoration: none;
+    &:hover {
+      color: $color-black;
+    }
+  }
+
+  @include media-q(small){
+    padding: 40px 0 0;
+  }
+
+}

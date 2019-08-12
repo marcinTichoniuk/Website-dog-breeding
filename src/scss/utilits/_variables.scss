@@ -1,0 +1,17 @@
+// fonts
+$font-default: 'Montserrat', sans-serif;
+$font-special: 'Mouse Memoirs', sans-serif;
+$font-size-default: 10px;
+
+// colors
+$color-white: #fff;
+$color-black: #000;
+$color-red: #d00a36;
+
+// map
+$breakpoints: (
+  small: (max-width: 576px),
+  medium: (max-width: 768px),
+  large: (max-width: 991px),
+);
+

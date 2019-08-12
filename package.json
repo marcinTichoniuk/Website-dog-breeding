@@ -1,5 +1,5 @@
 {
-  "homepage": "https://marcintichoniuk.github.io/Website-dog-breeding",
+  "homepage": "https://website-valey-of-borders.web.app/",
   "name": "valey-of-borders",
   "version": "0.1.0",
   "private": true,
@@ -8,6 +8,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.10.1",
     "@fortawesome/free-solid-svg-icons": "^5.10.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-image-gallery": "^0.8.18",

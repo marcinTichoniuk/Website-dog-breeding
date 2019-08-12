@@ -1,7 +1,6 @@
 import React from 'react';
 
 import ContactList from '../components/ContactList'
-import '../styles/Contact.css'
 
 // @TODO add validation form
 // @TODO handle form with firebase(?)
@@ -47,22 +46,17 @@ class ContactPage extends React.Component {
     const { username, email, area, msg } = this.state;
 
     return (
-      <div className="contact-page">
-        <h3 className='main-section-title'>Kontakt</h3>
+      <div className="contact">
+        <h3 className="page__title">Kontakt</h3>
         <ContactList fb={this.props.fb} phone={this.props.phone} envelope={this.props.envelope} />
-        <form action="" className='form' onSubmit={this.handleSubmit} noValidate>
-          <input type="text" name="username" value={username} onChange={this.handleChange} placeholder="Twoje imię" />
-          <input type="email" name="email" value={email} onChange={this.handleChange} placeholder="Twój adres email" />
-          <textarea name="area" value={area} onChange={this.handleChange} placeholder="Twoja wiadomość"></textarea>
-          <button className='btn btn-form'>Wyślij</button>
+        <form className="form contact__form" onSubmit={this.handleSubmit} noValidate>
+          <h3 className="form__title">Napisz do nas!</h3>
+          <input className="form__input" type="text" name="username" value={username} onChange={this.handleChange} placeholder="Twoje imię" />
+          <input className="form__input" type="email" name="email" value={email} onChange={this.handleChange} placeholder="Twój adres email" />
+          <textarea className="form__textarea" name="area" value={area} onChange={this.handleChange} placeholder="Twoja wiadomość"></textarea>
+          <button className='btn form__btn'>Wyślij</button>
           {msg && <span>{msg}</span>}
         </form>
-        <div className="address-info">
-          <h3>Odwiedź nas!</h3>
-          <p>{this.props.location}ul. Pieska 34 02-509 Mazańcowice (Bielsko-Biała)</p>
-          {/* <p>{this.props.envelope}valeyofborders@gmail.com</p>
-          <p>{this.props.phone}697 961 160</p> */}
-        </div>
       </div >
     );
   }

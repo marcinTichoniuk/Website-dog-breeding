@@ -1,0 +1,117 @@
+.page {
+  padding: 75px 50px 0;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  &__about-us {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-bottom: 190px;
+    @include media-q(medium){
+      flex-direction: column;
+      margin-bottom: 100px;
+    }
+  }
+
+  &__dogs {
+    @include flex($justify: space-around);
+    flex-wrap: wrap;
+    position: relative;
+    padding-top: 50px;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  &__dog {
+    position: relative;
+  }
+
+  &__title {
+    @include absolute($top: -50px, $left: 5%);
+    font-size: 4.2rem;
+    letter-spacing: 5px;
+    font-family: $font-special;
+    &::after {
+      content: '';
+      display: block;
+      width: 50%;
+      height: 5px;
+      background-color: $color-red;
+    }
+  }
+
+  &__text {
+    flex-basis: 50%;
+    font-size: 1.5rem;
+    padding-right: 20px;
+    text-align: justify;
+    margin-top: 25vh;
+    line-height: 150%;
+    @include media-q(medium){
+      margin-top: 10vh;
+      padding-right: 0;
+    }
+  }
+
+  &__gallery {
+    padding: 30px 170px;
+    @include media-q(large){
+      padding: 30px 90px;
+    }
+    @include media-q(medium){
+      padding: 30px 40px;
+    }
+    @include media-q(small){
+      padding: 30px 20px;
+    }
+    
+  }
+
+  &__description {
+    font-size: 1.6rem;
+    line-height: 150%;
+    padding: 40px 80px 0 80px;
+    text-align: justify;
+    @include media-q(medium){
+      font-size: 1.4rem;
+      padding: 30px 40px 0 40px;
+    }
+    @include media-q(small){
+      padding: 30px 20px 0 20px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0 110px;
+    @include media-q(medium){
+      padding: 0 70px;
+    }
+    @include media-q(small){
+      padding: 0 20px 0 40px;
+    }
+  }
+
+  &__list-element {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    @include media-q(medium){
+      font-size: 1.3rem;
+    }
+  }
+
+  &__link {
+    display: block;
+    text-align: right;
+  }
+
+  &__btn {
+    margin: 0;
+  }
+
+  @include media-q(small){
+    padding: 75px 30px 0;
+  }
+
+}

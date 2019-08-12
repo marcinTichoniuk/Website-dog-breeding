@@ -1,0 +1,96 @@
+.header {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgba(0,0,0, 0.9), rgba(0,0,0, 0.1)), url('../images/borderBack.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  min-height: 650px;
+
+  &::after {
+    content: '';
+    @include absolute($top: 90%, $left: 0);
+    display: block;
+    height: 10vh;
+    min-height: 66px;
+    width: 40%;
+    background-color: $color-white;
+  }
+
+  &__text-container {
+    @include absolute($top: 30%, $left: 10%);
+    max-width: 50%;
+    @include media-q(large){
+      top: 25%;
+    }
+    @include media-q(small){
+      left: 0; 
+      max-width: 100%;
+      width: 100%;
+      padding: 0 20px;
+    }
+  }     
+  
+  &__title, &__subtitle {
+    font-size: 5rem;
+    color: $color-white;
+    padding: 15px 0;
+    opacity: 0;
+    animation: moveUp 0.5s ease forwards 0.25s;
+    @include media-q(small){
+      font-size: 4.2rem;
+      padding: 15px 0 0 0;
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    font-family: $font-special;
+    letter-spacing: 8px;
+    font-size: 7rem;
+    animation: moveUp 0.5s ease forwards 0.5s;
+    @include media-q(small){
+      letter-spacing: 5px;
+      font-size: 6rem;
+      padding-top: 50px;
+    }
+  }
+
+  &__text {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    color: $color-white;
+    line-height: 140%;
+    @include media-q(small){
+      margin-top: 60px;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  }
+
+  &__nav-desktop {
+    @include absolute($top: 0, $right: 0);
+  }
+
+  &__nav-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__scroll {
+    @include absolute($bottom: 14%, $left: 50%);
+  }
+
+  &__burger {
+    @include absolute($top: 8%, $right: 12%);
+    @include media-q(small){
+      top: 3%;
+      right: 7%;
+    }
+  }
+
+}

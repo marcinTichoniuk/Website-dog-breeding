@@ -4,9 +4,9 @@ import React from 'react';
 
 const PuppiesHeader = () => {
   return (
-    <div className="header__title">
-      <h1>Szczeniaki</h1>
-      <p>Obecnie brak!</p>
+    <div className="header__text-container">
+      <h1 className='header__title'>Szczeniaki</h1>
+      <p className="header__text">Obecnie brak!</p>
     </div>
   );
 }

@@ -1,0 +1,23 @@
+.btn {
+  padding: 12px 24px;
+  margin-bottom: 25px;
+  background-color: $color-red;
+  border: none;
+  font-family: $font-default;
+  color: $color-white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  transition: 0.2s cubic-bezier(0, 1.44, 0.82, 1.6);
+  &:hover {
+    background-color: $color-white;
+    color: $color-red;
+    box-shadow: 0 0 0 2px $color-red;
+  }
+
+  @include media-q(small){
+    padding: 10px 20px;
+  }
+
+}
