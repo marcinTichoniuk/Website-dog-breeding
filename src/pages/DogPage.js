@@ -31,6 +31,7 @@ class DogPage extends React.Component {
   }
 
   render() {
+    console.log(this.state)
     const { name, description, birth, exams, titles, gallery } = this.state;
     return (
       <>
